@@ -1,0 +1,20 @@
+{
+    "name": "rtablada/query-collection",
+    "description": "",
+    "authors": [
+        {
+            "name": "Ryan Tablada",
+            "email": "ryan.tablada@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/database": "4.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Rtablada\\QueryCollection": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
