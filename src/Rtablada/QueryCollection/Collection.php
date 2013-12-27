@@ -36,9 +36,9 @@ class Collection extends \Illuminate\Database\Eloquent\Collection
 			throw new \InvalidArgumentException("Value must be provided.");
 		}
 
-		$results = $this->where($column, $operator, $value);
+		$results = $this->where($column, $operator, $value)->toArray();
 
-		return isset($results[0]) ? $results[0] : null;
+		return isset(array_values($results)[0]) ? array_values($results)[0] : null;
 	}
 
 	protected function whereQuery($model, $column, $operator, $value)
